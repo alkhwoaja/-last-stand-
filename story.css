@@ -1,0 +1,272 @@
+/* استيراد خط بكسلي من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e, #444480, #400f61);
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fc73ce;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fc73ce;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        top: 10px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.language-and-theme {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 20px;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(241, 196, 15, 0.4);
+    transform: scale(1.1);
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    z-index: 1001;
+}
+
+.nav-menu.active {
+    display: block;
+    z-index: 1002;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin-bottom: 1em;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 0.8em 1.5em;
+    border-radius: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.nav-menu ul li a:hover {
+    background: #f1c40faf;
+    color: black;
+    transform: scale(1.05);
+}
+
+.intro-overlay {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid #fc73ce;
+}
+
+.intro-text {
+    max-width: 800px;
+    width: 100%;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    color: #fc73ce;
+    animation: fadeIn 2s ease-out;
+}
+
+.intro-text p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #ddd;
+    animation: fadeIn 3s ease-out;
+}
+
+.story {
+    padding: 3em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-top: 2px solid #fc73ce;
+    border-bottom: 2px solid #fc73ce;
+}
+
+.story p {
+    font-size: 1.2em;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+    font-family: 'Press Start 2P', cursive;
+    color: #f1c40f;
+    font-size: 1.3em;
+    display: block;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.details {
+    padding: 3em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.details p {
+    font-size: 1.2em;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #ddd;
+}
+
+body.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .logo {
+    color: #f1c40f;
+}
+
+body.dark-mode .product {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .contact-footer {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .story,
+body.dark-mode .details,
+body.dark-mode .intro-overlay {
+    background: rgba(20, 20, 20, 0.7);
+}

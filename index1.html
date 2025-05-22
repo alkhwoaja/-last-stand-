@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the last stand</title>
+      <link rel="website icon" type="png"
+    href="code game (2).png">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <h1>Welcome to the world last stand</h1>
+    <nav class="navbar">
+        <div class="language-and-theme">
+            <div class="theme-toggle">🌙</div>
+        </div>
+        <div class="logo">
+            <a href="index1.html" class="logo-link">
+                <img src="the laste stand (2).png" alt="last stand">
+            </a>
+        </div>
+        <div class="menu-toggle">☰</div>
+    </nav>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#about">About the Game</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="index2.html">About the programmer</a></li>
+        </ul>
+    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Warped Caves</h1>
+            <div class="highlight">An overview of the game</div>
+            <p>Immerse yourself in an exciting adventure in the game the last stand </p>
+            <div class="social-icons">
+                
+                <a href="index4.html"  class="social-icon">📽</a>
+               <a href="index3.html"  class="social-icon">📜</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About the Game</h2>
+        <p>the last stand: is a 2D pixel art game I created, inspired by retro classics. Explore twisted caves, battle strange creatures, and uncover hidden secrets in a beautifully crafted pixel world.</p>
+    </section>
+    <section id="features" class="features">
+        <div class="feature-box">
+            <i class="fas fa-gamepad"></i>
+            <h3>Retro Gameplay</h3>
+            <p>Classic 2D platformer mechanics with a modern twist.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Pixel Art Style</h3>
+            <p>Hand-crafted pixel art visuals with vibrant colors.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-dungeon"></i>
+            <h3>Challenging Levels</h3>
+            <p>Travel through treacherous caves and defeat aliens.</p>
+        </div>
+    </section>
+    <section id="download" class="download">
+        <h2>Download Now</h2>
+        <p>Get Warped Caves: Expansion Pack 1 and start your adventure today!</p>
+        <a href="#" class="download-btn">Download</a>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

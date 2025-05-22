@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the last stand</title>
+    <link rel="website icon" type="png"
+    href="code game (2).png">
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+    <h1>Welcome to the world last stand</h1>
+    <nav class="navbar">
+        <div class="language-and-theme">
+            <div class="theme-toggle">🌙</div>
+        </div>
+        <div class="logo">
+            <a href="index1.html" class="logo-link">
+                <img src="the laste stand (2).png" alt="last stand">
+        </div>
+        <div class="menu-toggle">☰</div>
+    </nav>
+    <div class="nav-menu">
+        <ul>
+            
+            <li><a href="index2.html">About the programmer</a></li>
+        </ul>
+    </div>
+    <div class="intro-overlay">
+        <div class="intro-text">
+            <h2>A Cosmic Odyssey Awaits...</h2>
+            <p>Follow Clair Dawson into the unknown depths of a mysterious planet.</p>
+        </div>
+    </div>
+    <section id="story" class="story">
+        <h2>The Story</h2>
+        <p>During a mission to explore the solar system, astronaut Clair Dawson discovered an unstable cosmic tunnel. Upon entering it, his ship's engine exploded, hurling him onto the surface of a mysterious planet devoid of any signs of life or data on the maps.</p>
+        <p>Clair ventures into the first strange and enigmatic area, where he finds a locked portal with a message beside it:  
+        <span class="message">"You cannot go back, but you can move forward."</span>  
+        In the depths of the luminous forest, he encounters his first enemies: glowing alien beings coursing with electric charges. He discovers that these creatures are guarding something valuable. After a grueling battle, Clair seizes the key and unlocks the portal.</p>
+        <p>When he uses the key on the portal, Clair doesn’t transport to another planet as he expected, but to another, even stranger region within the same planet. The air here is thick, almost like a light liquid. The gravity is erratic, constantly shifting. Sounds emanate from beneath the ground, resembling the eerie moans of humans. Tall, eyeless alien creatures appear, moving silently as they guard the next portal. Clair finds another message:  
+        <span class="message">"You are not the first to enter this world... but you may be the last."</span>  
+        He obtains the key and opens the portal.</p>
+        <p>After passing through the second portal, Clair finds himself in a realm where time and space are indefinable. There’s no clear boundary between the ground and the ceiling. Colors shift constantly, and the entire scene morphs with every step he takes.  
+        Clair begins to lose his sense of what is real and what is an illusion. He discovers another message:  
+        <span class="message">"Do not search for the way back."</span>  
+        Realizing that the portals aren’t just gateways to new areas, he searches for the next key, battling new, strange, and terrifying alien creatures. Despite the challenge, he defeats them, claims the key, and opens the third door.</p>
+        <p>As Clair crosses the third portal, the scenes around him start to vanish, replaced by new, different ones. Is he still on the same planet?  
+        Who set up these trials? Will he ever escape?  
+        The only question that remains:  
+        <span class="message">Can Clair escape this planet and return to Earth?</span>  
+        No one knows Clair’s fate.</p>
+    </section>
+    <section id="details" class="details">
+        <h2>Game Details</h2>
+        <p>A 2D pixel art adventure game created with a retro vibe, featuring challenging levels, shifting environments, and encounters with eerie alien creatures.</p>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
